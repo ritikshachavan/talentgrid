@@ -1,4 +1,5 @@
 import { NavLink, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
 import Employees from "./pages/Employees.jsx";
 import Staffing from "./pages/Staffing.jsx";
 
@@ -8,12 +9,14 @@ export default function App() {
     <div className="layout">
       <nav className="sidebar">
         <h2>TalentGrid</h2>
-        <NavLink to="/" end className={link}>Employees</NavLink>
+        <NavLink to="/" end className={link}>Dashboard</NavLink>
+        <NavLink to="/employees" className={link}>Employees</NavLink>
         <NavLink to="/staffing" className={link}>Staffing</NavLink>
       </nav>
       <main className="content">
         <Routes>
-          <Route path="/" element={<Employees />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/employees" element={<Employees />} />
           <Route path="/staffing" element={<Staffing />} />
         </Routes>
       </main>
