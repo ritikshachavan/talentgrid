@@ -62,6 +62,7 @@ public class AllocationService {
             throw new ObjectOptimisticLockingFailureException(Allocation.class, id);
 
         apply(a, r, id);
+        allocationRepository.saveAndFlush(a);   // flush now, so the version is incremented
         return toResponse(a);
     }
 
