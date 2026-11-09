@@ -162,14 +162,13 @@ erDiagram
 
 ## Screenshots
 
-> Add your screenshots to a `docs/` folder and update these paths.
 
 | Dashboard | Staffing: Find Team |
-|---|---|
+
 | ![Dashboard](docs/dashboard.png) | ![Staffing](docs/staffing.png) |
 
 | Employees | Postman Runner |
-|---|---|
+
 | ![Employees](docs/employees.png) | ![Postman](docs/postman-runner.png) |
 
 ---
